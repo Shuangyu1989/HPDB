@@ -17,7 +17,7 @@
 + Support multiple platforms: iOS Android React-Native
 + Support both normal and encrypted db
 + Support pre-defined table schema or dynamic table schema
-  + ex. schema fetch from server and create or update ur local table
+  + fetch schema info from server and parse it to ```Array<HPDBColumnDesc>```
 + Support dynamic change table schema
   + currently only support insert new fields
 + Support both sync and async IO
