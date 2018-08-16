@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD0BF4252122B267009A45FF /* NSString+HPDB.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0BF4232122B267009A45FF /* NSString+HPDB.h */; };
+		CD0BF4262122B267009A45FF /* NSString+HPDB.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0BF4242122B267009A45FF /* NSString+HPDB.m */; };
+		CD5FD70C211ACCAB00CDD82E /* HPDB.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD70A211ACCAB00CDD82E /* HPDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD731211ACCCB00CDD82E /* HPDBContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD712211ACCCA00CDD82E /* HPDBContext.swift */; };
+		CD5FD732211ACCCB00CDD82E /* HPDBStringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD713211ACCCA00CDD82E /* HPDBStringExt.swift */; };
+		CD5FD733211ACCCB00CDD82E /* HPDBSQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD714211ACCCA00CDD82E /* HPDBSQL.swift */; };
+		CD5FD734211ACCCB00CDD82E /* FMDatabase+InMemoryOnDiskIO.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD717211ACCCA00CDD82E /* FMDatabase+InMemoryOnDiskIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD735211ACCCB00CDD82E /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD718211ACCCA00CDD82E /* FMDatabase+InMemoryOnDiskIO.m */; };
+		CD5FD736211ACCCB00CDD82E /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD71A211ACCCA00CDD82E /* FMDatabase+FTS3.m */; };
+		CD5FD737211ACCCB00CDD82E /* FMTokenizers.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD71B211ACCCA00CDD82E /* FMTokenizers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD738211ACCCB00CDD82E /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD71C211ACCCA00CDD82E /* FMTokenizers.m */; };
+		CD5FD739211ACCCB00CDD82E /* FMDatabase+FTS3.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD71D211ACCCA00CDD82E /* FMDatabase+FTS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD73A211ACCCB00CDD82E /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD71E211ACCCA00CDD82E /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD73B211ACCCB00CDD82E /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD720211ACCCB00CDD82E /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD73C211ACCCB00CDD82E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD721211ACCCB00CDD82E /* FMDatabaseQueue.m */; };
+		CD5FD73D211ACCCB00CDD82E /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD722211ACCCB00CDD82E /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD73E211ACCCB00CDD82E /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD723211ACCCB00CDD82E /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD73F211ACCCB00CDD82E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD724211ACCCB00CDD82E /* FMDatabaseAdditions.m */; };
+		CD5FD740211ACCCB00CDD82E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD725211ACCCB00CDD82E /* FMDatabase.m */; };
+		CD5FD741211ACCCB00CDD82E /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD726211ACCCB00CDD82E /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD742211ACCCB00CDD82E /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD727211ACCCB00CDD82E /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD743211ACCCB00CDD82E /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD728211ACCCB00CDD82E /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD744211ACCCB00CDD82E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD729211ACCCB00CDD82E /* FMDatabasePool.m */; };
+		CD5FD745211ACCCB00CDD82E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD72A211ACCCB00CDD82E /* FMResultSet.m */; };
+		CD5FD746211ACCCB00CDD82E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD5FD72B211ACCCB00CDD82E /* Info.plist */; };
+		CD5FD747211ACCCB00CDD82E /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5FD72D211ACCCB00CDD82E /* libsqlcipher.a */; };
+		CD5FD748211ACCCB00CDD82E /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FD72E211ACCCB00CDD82E /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5FD749211ACCCB00CDD82E /* HPDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5FD72F211ACCCB00CDD82E /* HPDB.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD0BF4232122B267009A45FF /* NSString+HPDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HPDB.h"; sourceTree = "<group>"; };
+		CD0BF4242122B267009A45FF /* NSString+HPDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HPDB.m"; sourceTree = "<group>"; };
+		CD5FD707211ACCAB00CDD82E /* HPDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HPDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5FD70A211ACCAB00CDD82E /* HPDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDB.h; sourceTree = "<group>"; };
+		CD5FD70B211ACCAB00CDD82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5FD712211ACCCA00CDD82E /* HPDBContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPDBContext.swift; sourceTree = "<group>"; };
+		CD5FD713211ACCCA00CDD82E /* HPDBStringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPDBStringExt.swift; sourceTree = "<group>"; };
+		CD5FD714211ACCCA00CDD82E /* HPDBSQL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPDBSQL.swift; sourceTree = "<group>"; };
+		CD5FD717211ACCCA00CDD82E /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		CD5FD718211ACCCA00CDD82E /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		CD5FD71A211ACCCA00CDD82E /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+FTS3.m"; sourceTree = "<group>"; };
+		CD5FD71B211ACCCA00CDD82E /* FMTokenizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTokenizers.h; sourceTree = "<group>"; };
+		CD5FD71C211ACCCA00CDD82E /* FMTokenizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTokenizers.m; sourceTree = "<group>"; };
+		CD5FD71D211ACCCA00CDD82E /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+FTS3.h"; sourceTree = "<group>"; };
+		CD5FD71E211ACCCA00CDD82E /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		CD5FD720211ACCCB00CDD82E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CD5FD721211ACCCB00CDD82E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CD5FD722211ACCCB00CDD82E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CD5FD723211ACCCB00CDD82E /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		CD5FD724211ACCCB00CDD82E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CD5FD725211ACCCB00CDD82E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CD5FD726211ACCCB00CDD82E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CD5FD727211ACCCB00CDD82E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		CD5FD728211ACCCB00CDD82E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CD5FD729211ACCCB00CDD82E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		CD5FD72A211ACCCB00CDD82E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CD5FD72B211ACCCB00CDD82E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5FD72D211ACCCB00CDD82E /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
+		CD5FD72E211ACCCB00CDD82E /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		CD5FD72F211ACCCB00CDD82E /* HPDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPDB.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD5FD703211ACCAB00CDD82E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5FD747211ACCCB00CDD82E /* libsqlcipher.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD0BF4222122B1E8009A45FF /* oc */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BF4232122B267009A45FF /* NSString+HPDB.h */,
+				CD0BF4242122B267009A45FF /* NSString+HPDB.m */,
+			);
+			path = oc;
+			sourceTree = "<group>";
+		};
+		CD5FD6FD211ACCAB00CDD82E = {
+			isa = PBXGroup;
+			children = (
+				CD5FD709211ACCAB00CDD82E /* HPDB */,
+				CD5FD708211ACCAB00CDD82E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD5FD708211ACCAB00CDD82E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD5FD707211ACCAB00CDD82E /* HPDB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD5FD709211ACCAB00CDD82E /* HPDB */ = {
+			isa = PBXGroup;
+			children = (
+				CD5FD72C211ACCCB00CDD82E /* sqlcipher */,
+				CD5FD715211ACCCA00CDD82E /* extra */,
+				CD5FD71F211ACCCB00CDD82E /* fmdb */,
+				CD5FD72F211ACCCB00CDD82E /* HPDB.swift */,
+				CD5FD712211ACCCA00CDD82E /* HPDBContext.swift */,
+				CD5FD714211ACCCA00CDD82E /* HPDBSQL.swift */,
+				CD5FD713211ACCCA00CDD82E /* HPDBStringExt.swift */,
+				CD0BF4222122B1E8009A45FF /* oc */,
+				CD5FD70A211ACCAB00CDD82E /* HPDB.h */,
+				CD5FD70B211ACCAB00CDD82E /* Info.plist */,
+			);
+			path = HPDB;
+			sourceTree = "<group>";
+		};
+		CD5FD715211ACCCA00CDD82E /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				CD5FD716211ACCCA00CDD82E /* InMemoryOnDiskIO */,
+				CD5FD719211ACCCA00CDD82E /* fts3 */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		CD5FD716211ACCCA00CDD82E /* InMemoryOnDiskIO */ = {
+			isa = PBXGroup;
+			children = (
+				CD5FD717211ACCCA00CDD82E /* FMDatabase+InMemoryOnDiskIO.h */,
+				CD5FD718211ACCCA00CDD82E /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = InMemoryOnDiskIO;
+			sourceTree = "<group>";
+		};
+		CD5FD719211ACCCA00CDD82E /* fts3 */ = {
+			isa = PBXGroup;
+			children = (
+				CD5FD71A211ACCCA00CDD82E /* FMDatabase+FTS3.m */,
+				CD5FD71B211ACCCA00CDD82E /* FMTokenizers.h */,
+				CD5FD71C211ACCCA00CDD82E /* FMTokenizers.m */,
+				CD5FD71D211ACCCA00CDD82E /* FMDatabase+FTS3.h */,
+				CD5FD71E211ACCCA00CDD82E /* fts3_tokenizer.h */,
+			);
+			path = fts3;
+			sourceTree = "<group>";
+		};
+		CD5FD71F211ACCCB00CDD82E /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				CD5FD720211ACCCB00CDD82E /* FMDatabase.h */,
+				CD5FD721211ACCCB00CDD82E /* FMDatabaseQueue.m */,
+				CD5FD722211ACCCB00CDD82E /* FMResultSet.h */,
+				CD5FD723211ACCCB00CDD82E /* FMDatabasePool.h */,
+				CD5FD724211ACCCB00CDD82E /* FMDatabaseAdditions.m */,
+				CD5FD725211ACCCB00CDD82E /* FMDatabase.m */,
+				CD5FD726211ACCCB00CDD82E /* FMDatabaseQueue.h */,
+				CD5FD727211ACCCB00CDD82E /* FMDB.h */,
+				CD5FD728211ACCCB00CDD82E /* FMDatabaseAdditions.h */,
+				CD5FD729211ACCCB00CDD82E /* FMDatabasePool.m */,
+				CD5FD72A211ACCCB00CDD82E /* FMResultSet.m */,
+				CD5FD72B211ACCCB00CDD82E /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		CD5FD72C211ACCCB00CDD82E /* sqlcipher */ = {
+			isa = PBXGroup;
+			children = (
+				CD5FD72D211ACCCB00CDD82E /* libsqlcipher.a */,
+				CD5FD72E211ACCCB00CDD82E /* sqlite3.h */,
+			);
+			path = sqlcipher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD5FD704211ACCAB00CDD82E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5FD73E211ACCCB00CDD82E /* FMDatabasePool.h in Headers */,
+				CD5FD73A211ACCCB00CDD82E /* fts3_tokenizer.h in Headers */,
+				CD5FD73D211ACCCB00CDD82E /* FMResultSet.h in Headers */,
+				CD5FD743211ACCCB00CDD82E /* FMDatabaseAdditions.h in Headers */,
+				CD5FD748211ACCCB00CDD82E /* sqlite3.h in Headers */,
+				CD5FD737211ACCCB00CDD82E /* FMTokenizers.h in Headers */,
+				CD5FD73B211ACCCB00CDD82E /* FMDatabase.h in Headers */,
+				CD0BF4252122B267009A45FF /* NSString+HPDB.h in Headers */,
+				CD5FD742211ACCCB00CDD82E /* FMDB.h in Headers */,
+				CD5FD741211ACCCB00CDD82E /* FMDatabaseQueue.h in Headers */,
+				CD5FD734211ACCCB00CDD82E /* FMDatabase+InMemoryOnDiskIO.h in Headers */,
+				CD5FD739211ACCCB00CDD82E /* FMDatabase+FTS3.h in Headers */,
+				CD5FD70C211ACCAB00CDD82E /* HPDB.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD5FD706211ACCAB00CDD82E /* HPDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5FD70F211ACCAB00CDD82E /* Build configuration list for PBXNativeTarget "HPDB" */;
+			buildPhases = (
+				CD5FD702211ACCAB00CDD82E /* Sources */,
+				CD5FD703211ACCAB00CDD82E /* Frameworks */,
+				CD5FD704211ACCAB00CDD82E /* Headers */,
+				CD5FD705211ACCAB00CDD82E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HPDB;
+			productName = HPDB;
+			productReference = CD5FD707211ACCAB00CDD82E /* HPDB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD5FD6FE211ACCAB00CDD82E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = rkhd;
+				TargetAttributes = {
+					CD5FD706211ACCAB00CDD82E = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = CD5FD701211ACCAB00CDD82E /* Build configuration list for PBXProject "HPDB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD5FD6FD211ACCAB00CDD82E;
+			productRefGroup = CD5FD708211ACCAB00CDD82E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD5FD706211ACCAB00CDD82E /* HPDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD5FD705211ACCAB00CDD82E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5FD746211ACCCB00CDD82E /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD5FD702211ACCAB00CDD82E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0BF4262122B267009A45FF /* NSString+HPDB.m in Sources */,
+				CD5FD732211ACCCB00CDD82E /* HPDBStringExt.swift in Sources */,
+				CD5FD733211ACCCB00CDD82E /* HPDBSQL.swift in Sources */,
+				CD5FD731211ACCCB00CDD82E /* HPDBContext.swift in Sources */,
+				CD5FD740211ACCCB00CDD82E /* FMDatabase.m in Sources */,
+				CD5FD73C211ACCCB00CDD82E /* FMDatabaseQueue.m in Sources */,
+				CD5FD735211ACCCB00CDD82E /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				CD5FD738211ACCCB00CDD82E /* FMTokenizers.m in Sources */,
+				CD5FD749211ACCCB00CDD82E /* HPDB.swift in Sources */,
+				CD5FD744211ACCCB00CDD82E /* FMDatabasePool.m in Sources */,
+				CD5FD745211ACCCB00CDD82E /* FMResultSet.m in Sources */,
+				CD5FD736211ACCCB00CDD82E /* FMDatabase+FTS3.m in Sources */,
+				CD5FD73F211ACCCB00CDD82E /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD5FD70D211ACCAB00CDD82E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD5FD70E211ACCAB00CDD82E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD5FD710211ACCAB00CDD82E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"SQLITE_HAS_CODEC=1",
+					"FMDB_SQLITE_STANDALONE=1",
+				);
+				INFOPLIST_FILE = HPDB/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HPDB/sqlcipher",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkhd.breeze.HPDB;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD5FD711211ACCAB00CDD82E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"SQLITE_HAS_CODEC=1",
+					"FMDB_SQLITE_STANDALONE=1",
+				);
+				INFOPLIST_FILE = HPDB/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HPDB/sqlcipher",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkhd.breeze.HPDB;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD5FD701211ACCAB00CDD82E /* Build configuration list for PBXProject "HPDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5FD70D211ACCAB00CDD82E /* Debug */,
+				CD5FD70E211ACCAB00CDD82E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5FD70F211ACCAB00CDD82E /* Build configuration list for PBXNativeTarget "HPDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5FD710211ACCAB00CDD82E /* Debug */,
+				CD5FD711211ACCAB00CDD82E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD5FD6FE211ACCAB00CDD82E /* Project object */;
+}

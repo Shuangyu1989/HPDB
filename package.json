@@ -1,0 +1,17 @@
+{
+  "name": "hpdb",
+  "version": "0.0.1",
+  "description": "an om database mainly written for react-native.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "iOS",
+    "Android",
+    "react-native",
+    "database"
+  ],
+  "author": "Hu Peng",
+  "license": "ISC"
+}
