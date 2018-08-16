@@ -26,7 +26,7 @@
 **一、pre-define table schema**
 
 ```
-// iOS
+/***** iOS *****/
 @objc(MyTask)
 class MyTask: NSObject, IHPDBTableDesc {
   static var tableName: String = "MyTask"
@@ -41,7 +41,7 @@ class MyTask: NSObject, IHPDBTableDesc {
   ]
 }
 
-// Android
+/***** Android *****/
 class MyTask {
     companion object {
         const val tableName = "MyTask"
@@ -59,15 +59,16 @@ class MyTask {
 **二、create table**
 
 ```
-// iOS
+/***** iOS *****/
 MyTask.tableName.db_createTable(with: MyTask.tableSchema)
-// Android
+
+/***** Android *****/
 MyTask.tableName.db_createTable(MyTask.tableSchema)
 ```
-**二、insert**
+**三、insert**
 
 ```
-  // iOS
+  /***** iOS *****/
   var rs = Array<HPDB.AnyDic>()
   for i in 0..<50 {
     var instance = [
@@ -79,10 +80,11 @@ MyTask.tableName.db_createTable(MyTask.tableSchema)
   }
   // async batch insert
   "MyTask".db_insert(records: rs) { _,_ in }
+  
   // sync batch insert
   "MyTask".db_insert(records: rs)
   
-  // Android
+  /***** Android *****/
   var rs = arrayListOf<JSONObject>()
   for ( i in 0 until 50) {
       var jsonObj = JSONObject().apply {
@@ -95,6 +97,11 @@ MyTask.tableName.db_createTable(MyTask.tableSchema)
   }
   // async batch insert
   "MyTask".db_insert(rs) {}
+  
   // sync batch insert
   "MyTask".db_insert(rs)
+```
+**四、query**
+```
+"MyTask".db_findAll()
 ```
