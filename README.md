@@ -9,6 +9,8 @@
 ![Platform](https://img.shields.io/badge/platform-ReactNative-lightgrey.svg)&nbsp;
 [![Build Status](https://api.travis-ci.org/shuangyu/HPPluginRepo.svg?branch=master)](https://travis-ci.org/shuangyu/HPPluginRepo)
 
++ ![Installation](https://github.com/Shuangyu1989/HPDB/wiki/Installation)
+
 ## 一、能力
 + 支持普通数据库和加密数据库
 + 支持预定义表和动态生成表
