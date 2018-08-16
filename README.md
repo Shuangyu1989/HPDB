@@ -1,4 +1,4 @@
-# HPDB README
+# HPDB
 
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/shuangyu/HPPluginRepo/blob/master/The%20MIT%20License%20(MIT))&nbsp;
 ![Support](https://img.shields.io/badge/language-swift-orange.svg)&nbsp;
@@ -14,8 +14,47 @@
 + [Documentation](https://github.com/Shuangyu1989/HPDB/wiki/Guideline)
 
 # Features
-+ 支持普通数据库和加密数据库
-+ 支持预定义表和动态生成表
-+ 支持动态扩展表(目前只支持新增字段)
-+ 记录当前数据库版本号,升级逻辑需自行实现
-+ 支持sync 和 async I/O
++ Support multiple platforms: iOS Android React-Native
++ Support both normal and encrypted db
++ Support pre-defined table schema or dynamic table schema
+  + ex. schema fetch from server and create or update ur local table
++ Support dynamic change table schema
+  + currently only support insert new fields
++ Support both sync and async IO
+
+# Demos
+**一、pre-define table schema**
+
+***iOS:***
+
+```
+@objc(MyTask)
+class MyTask: NSObject, IHPDBTableDesc {
+  static var tableName: String = "MyTask"
+  static var tableSchema: Array<HPDBColumnDesc> = [
+    HPDBColumnDesc(name: "type", type: .text, nullable: false),
+    HPDBColumnDesc(name: "tryTime", type: .integer, defaultVal: 3),
+    HPDBColumnDesc(name: "status", type: .integer, defaultVal: 0),
+    HPDBColumnDesc(name: "id", type: .text, nullable: false),
+    HPDBColumnDesc(name: "createTime", type: .integer, nullable: false),
+    HPDBColumnDesc(name: "dependency", type: .text),
+    HPDBColumnDesc(name: "data", type: .text)
+  ]
+}
+```
+***Android:***
+
+```
+class MyTask {
+    companion object {
+        const val tableName = "MyTask"
+        val tableSchema = arrayListOf(
+                HPDBColumnDesc("type",  HPDBColumnType.TEXT, nullable = false),
+                HPDBColumnDesc("tryTime",  HPDBColumnType.INTEGER, defaultVal = 3),
+                HPDBColumnDesc("status",  HPDBColumnType.INTEGER, defaultVal = 0),
+                HPDBColumnDesc("id",  HPDBColumnType.TEXT, nullable = false, primaryKey = true),
+                HPDBColumnDesc("createTime",  HPDBColumnType.TEXT, nullable = false),
+                HPDBColumnDesc("dependency",  HPDBColumnType.TEXT),
+                HPDBColumnDesc("data",  HPDBColumnType.TEXT)
+}
+```
