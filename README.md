@@ -1,5 +1,13 @@
 # HPDB Guideline
 
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/shuangyu/HPPluginRepo/blob/master/The%20MIT%20License%20(MIT))&nbsp;
+![Support](https://img.shields.io/badge/language-swift-orange.svg)&nbsp;
+![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)&nbsp;
+![Support](https://img.shields.io/badge/language-kotlin-orange.svg)&nbsp;
+![Platform](https://img.shields.io/badge/platform-android-lightgrey.svg)&nbsp;
+![Platform](https://img.shields.io/badge/platform-rn-lightgrey.svg)&nbsp;
+[![Build Status](https://api.travis-ci.org/shuangyu/HPPluginRepo.svg?branch=master)](https://travis-ci.org/shuangyu/HPPluginRepo)
+
 ## 一、能力
 + 支持普通数据库和加密数据库
 + 支持预定义表和动态生成表
